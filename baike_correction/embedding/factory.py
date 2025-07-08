@@ -2,7 +2,7 @@ import os
 from typing import Any
 
 from .base import BaseEmbedding
-from .embedding_registry import EMBEDDING_REGISTRY
+from .registry import EMBEDDING_REGISTRY
 
 
 def get_embedding(embedding_cfgs: dict[str, Any]) -> BaseEmbedding:

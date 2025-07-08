@@ -3,7 +3,7 @@ from typing import override
 from openai import OpenAI
 
 from .base import BaseEmbedding
-from .embedding_registry import register_embedding
+from .registry import register_embedding
 
 
 @register_embedding("openai")

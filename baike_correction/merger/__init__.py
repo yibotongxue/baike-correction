@@ -1,9 +1,9 @@
 from .base import BaseMerger
-from .key_words import KeyWordsMerger
 from .semantics import SemanticsMerger
+from .factory import get_merger
 
 __all__ = [
     "BaseMerger",
-    "KeyWordsMerger",
     "SemanticsMerger",
+    "get_merger",
 ]

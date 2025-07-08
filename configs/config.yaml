@@ -1,0 +1,15 @@
+splitter_cfgs:
+  splitter_type: merge
+  inner_splitter_cfgs:
+    splitter_type: sentence
+    sep: ['。', '？', '!']
+  merger_cfgs:
+    merger_type: semantics
+    embedding_cfgs:
+      embedding_type: bge
+      model_name: BAAI/bge-base-zh-v1.5
+      device: cuda:0
+      normalize_embeddings: False
+      max_length: 512
+      max_batch_size: 32
+    threshold: 0.45

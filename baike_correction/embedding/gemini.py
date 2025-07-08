@@ -5,7 +5,7 @@ from google import genai
 from google.genai import types
 
 from .base import BaseEmbedding
-from .embedding_registry import register_embedding
+from .registry import register_embedding
 
 
 @register_embedding("gemini")

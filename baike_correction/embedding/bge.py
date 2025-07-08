@@ -4,7 +4,7 @@ import torch
 from transformers import AutoModel, AutoTokenizer
 
 from .base import BaseEmbedding
-from .embedding_registry import register_embedding
+from .registry import register_embedding
 
 @register_embedding("bge")
 class BGEEmbedding(BaseEmbedding):
