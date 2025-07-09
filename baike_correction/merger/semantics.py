@@ -12,6 +12,8 @@ class SemanticsMerger(BaseMerger):
 
     @override
     def merge(self, chunks: list[str]) -> list[str]:
+        if len(chunks) == 0:
+            return []
         chunk_embeddings = self.embedding.embed_batch(chunks)
         embedding_matrix = np.array(chunk_embeddings)
         embedding_norm: np.ndarray = np.linalg.norm(embedding_matrix, axis=1, keepdims=True)

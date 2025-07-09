@@ -1,0 +1,17 @@
+splitter_cfgs:
+  splitter_type: merge
+  inner_splitter_cfgs:
+    splitter_type: sentence
+    sep: ['。', '？', '!']
+  merger_cfgs:
+    merger_type: key_words
+    merger_extractor_cfgs:
+      extractor_type: yake
+      lan: zh
+      n: 3
+      dedup_lim: 0.9
+      dedup_func: seqm
+      window_size: 1
+      top: 5
+      features: null
+      stopwords: null
