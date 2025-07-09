@@ -31,3 +31,9 @@ uv run -m baike_correction.splitter --config ./configs/config.yaml --input ./inp
 ```
 
 可以通过修改 `./configs/config.yaml` 实现其他的切分方法。
+
+如果要对切分的文本提取关键字，可以运行命令
+
+```bash
+uv run main.py --config ./configs/config.yaml --input <待切份文件> --output <输出文件>
+```
